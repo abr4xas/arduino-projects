@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/angel/html/058/arduino/arduino-1.8.12/**",
+                "/home/angel/html/058/arduino/arduino-1.8.12/tools/**",
+                "/home/angel/html/058/arduino/arduino-1.8.12/libraries/**",
+                "/home/angel/html/058/arduino/arduino-1.8.12/hardware/arduino/avr/**"
+            ],
+            "forcedInclude": [
+                "/home/angel/html/058/arduino/arduino-1.8.12/hardware/arduino/avr/cores/arduino/Arduino.h"
+            ],
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "gnu++14",
+            "defines": ["USBCON"]
+        }
+    ],
+    "version": 4
+}
