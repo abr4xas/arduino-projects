@@ -3,13 +3,18 @@
         {
             "name": "Linux",
             "includePath": [
+                "/home/angel/.arduino15/packages/esp8266/tools/**",
+                "/home/angel/.arduino15/packages/esp8266/hardware/esp8266/2.7.4/**",
+                "/home/angel/.arduino15/packages/arduino/tools/**",
+                "/home/angel/.arduino15/packages/arduino/hardware/avr/1.8.3/**",
                 "${workspaceFolder}/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "gnu11",
             "cppStandard": "gnu++14",
-            "intelliSenseMode": "clang-x64"
+            "intelliSenseMode": "clang-x64",
+            "forcedInclude": []
         }
     ],
     "version": 4

@@ -2,7 +2,6 @@
 #define RX 10
 #define TX 11
 
-
 #ifndef HAVE_HWSERIAL1
 #include "SoftwareSerial.h"
 
@@ -17,33 +16,31 @@ char ssid[] = "winterfell";
 char pass[] = "dracarys";
 int status = WL_IDLE_STATUS;
 
-
 void setup()
 {
-  // Open up communications for arduino serial and esp serial at same rate
-  Serial.begin(ESP8266_BAUD);
-  Serial1.begin(ESP8266_BAUD);
+	// Open up communications for arduino serial and esp serial at same rate
+	Serial.begin(ESP8266_BAUD);
+	Serial1.begin(ESP8266_BAUD);
 
-  // Initialize the esp module
-  WiFi.init(&Serial1);
+	// Initialize the esp module
+	WiFi.init(&Serial1);
 
-  // Start connecting to wifi network and wait for connection to complete
-  while (status != WL_CONNECTED)
-  {
-    Serial.print("Conecting to wifi network: ");
-    Serial.println(ssid);
+	// Start connecting to wifi network and wait for connection to complete
+	while (status != WL_CONNECTED)
+	{
+		Serial.print("Conecting to wifi network: ");
+		Serial.println(ssid);
 
-    status = WiFi.begin(ssid, pass);
-  }
+		status = WiFi.begin(ssid, pass);
+	}
 
-  // Once we are connected log the IP address of the ESP module
-  Serial.print("IP Address of ESP8266 Module is: ");
-  Serial.println(WiFi.localIP());
-  Serial.println("You're connected to the network");
-
+	// Once we are connected log the IP address of the ESP module
+	Serial.print("IP Address of ESP8266 Module is: ");
+	Serial.println(WiFi.localIP());
+	Serial.println("You're connected to the network");
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-
+void loop()
+{
+	// put your main code here, to run repeatedly:
 }
